@@ -1,0 +1,157 @@
+
+
+.logo{
+  width: 150px;
+  height: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: georgia,times,serif;
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 1.4em;
+  margin: 0;
+}
+p{
+  margin-bottom: 1.5em;
+    text-align: justify;
+}
+.contenedor{
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+h1 {
+  line-height: 1.3em;
+  font-size: 2rem;
+}
+.logo-nav-contenedor{
+  display: flex;
+  /*  los elementos como elementos flex se muevan libremente sin espacios */
+  justify-content: space-between;
+  /* centralizar  */
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.logo{
+  letter-spacing: 5px;
+  font-size: 1.3em;
+}
+.menu-icon{
+  display: none;
+}
+
+header{
+background: #17e443;
+color: white;
+padding: 1.5rem;
+/* manterner la posicion de la cabecera fija */
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+
+}
+.navigation ul{
+  margin: 0;
+  padding: 0;list-style: none;
+}
+.navigation ul li{
+display: inline-block;
+}
+.navigation ul li a{
+  display: block;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+.navigation ul li a:hover{
+  background: #2685e4;
+
+}
+.footer{
+  background: #141313;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+  color: white;
+}
+.main{
+  padding-top: 15rem;
+
+}
+.frame{
+  width:560px;
+  height:315px;
+}
+.imgcaracte{
+  width:280px;
+  height:180px;
+}
+.uso-img{
+  width:450px;
+  height:280px;
+}
+
+/* parte de codigo donde podemos modificar el tamaño de los elementos cuando tenemos la
+resolucion es mejor de 770 */
+@media only screen and (max-width:770px ) {
+.menu-icon{
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+}
+
+.navigation{
+  width: 100%;
+  margin-top: 1rem;
+}
+.navigation ul{
+  display: none;
+}
+.navigation ul.show{
+  display: block;
+}
+  .navigation ul li{
+  display: block;
+  }
+  .navigation ul li a{
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  .navigation ul li a:hover{
+    background: #8d8e8f;
+  }
+  .frame{
+    width:320px;
+    height:215px;
+  }
+
+.imgcaracte{
+  width:130px;
+  height:80px;
+}
+.origen-img{
+  width:250px;
+  height:180px;
+}
+.uso-img{
+  width:250px;
+  height:180px;
+}
+.venta-img{
+  width:250px;
+  height:180px;
+}
+}
